@@ -1,7 +1,12 @@
 # Boards are square areas of N rows and N columns.
 #     - Rows and columns in boards are numbered starting from 1.
-import Drop7.Disk as Disk
-import Drop7.Position as Position
+try:
+    import Disk
+    import Position
+except:
+    import Drop7.Disk as Disk
+    import Drop7.Position as Position
+
 from random import *
 
 

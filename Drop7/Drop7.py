@@ -1,7 +1,11 @@
-import Drop7.Disk as Disk
-import Drop7.Board as Board
-import Drop7.Position as Position
-
+try:
+    import Disk
+    import Board
+    import Position
+except :
+    import Drop7.Disk as Disk
+    import Drop7.Position as Position
+    import Drop7.Board as Board
 
 def drop_disk_at(board, disk=None, column=None):
     """
